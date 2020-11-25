@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <link href="style.css" type="text/css" rel="stylesheet">
-  <title>Personal Showcase Website</title>
-</head>
-
-<body>
-    <div>
-        <h1 class="button about">About</h1>
-        <h3>Hi, I'm Madeline (she/her), and I am a</h3>
-        <h3>2nd Year Student studying Computer Science.</h3>
-        <h2>I am also in the process of obtaining a</h2>
-        <h2> minor in Communicaion Studies.</h2>
-        <h2>Besides programming, I like to listen to music</h2>
-        <h2>>and color in my adult coloring books :)</h2>
+  <head>
+    <title>Madeline's Portfolio</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <br><br>
+    <div id="about">
+      <h2>About</h2>
+      <p>My name is Madeline and I am a 2nd year student at Western Washington University.
+      I am working towards a Bachelors of Science in Computer Science, with a minor in Communication Studies.</p>
+      <br><br>
+      <p>I am also an undergraduate research assistant in Dr. Caroline Hardin's lab! Our current projects focus on CS Education,
+        Hackathons, and Digital Privacy. I am currently working with a few of my other lab members on developing the website, which
+        you can find <a href="indexinbounds.org" target="_blank">here</a>!
+      </p>
+      <br><br>
+      <p>When I'm not programming, I like to listen to music, go grocery shopping (weird hobby, I know, but weirdly therapeutic), 
+        and watch television.</p>
+      <img src="https://media-exp1.licdn.com/dms/image/C5603AQFxinKNnsckNw/profile-displayphoto-shrink_400_400/0?e=1611792000&v=beta&t=HF0j-xx6icO-Urgjj1GjKTwN_Kte7d63UdLy4LcDqWA"/>
     </div>
-    <h1 class="button project">Projects</h1>
-</body>
-
+    <br><br>
+    <div id="projects">
+      <h2>Projects</h2>
+      <p>Below I have linked a couple projects in my GitHub repository. <strong>NOTE:</strong>I have more notable, extensive 
+        projects in a private repository. If you are interested in viewing them, please <a href="#contact">contact me</a> and I 
+        will add you as a collaborator!
+      </p>
+      <br>
+      <ul>
+        <dl>
+          <li><dt><a href="https://github.com/mcswe/Count-Components">Graph Component Counter</a></dt></li>
+            <dd>This is a small project I worked on to practice implementing an adjacency matrix and breadth-first search. 
+            My main method accepts an argument for a text file whose first line specifies the number of nodes |V| and 
+            whose suceeding lines contain two integers indicating an edge between the two nodes. Nodes in the graph are 
+            numbered sequentially from 0..|V| and when run, the program will print the number of connected components in the graph.
+            </dd>
+          <li><dt><a href="https://github.com/mcswe/Cancer-Classifier">Cancer Classifier</a></dt></li>
+            <dd>
+              This was the final assignment for my CSCI 141 - Intro to Programming class (Winter 2020). The goal was to implement 
+              a Machine Learning framework using Python to develop a rule-based classifier that predicts if an unknown 
+              tumor is malignant or benign.
+            </dd>
+        </dl>
+      </ul>
+    </div>
+    <br><br>
+    <div id="contact">
+      <h2>Contact Me</h2>
+      <p>Please add me on LinkedIn and we can connect! I would love to hear from you!</p>
+      <a href="https://www.linkedin.com/in/mad-c/" target="_blank">
+        <img src="https://seeklogo.net/wp-content/uploads/2017/01/linkedin-logo-512x512.png" 
+        alt="LinkedIn Logo" style="width:100px;height:100px;"/>
+      </a>
+    </div>
+    
+  </body>
 </html>
