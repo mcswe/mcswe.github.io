@@ -11,7 +11,8 @@ body {
     margin:0;
     background-color: var(--tan);
     color: var(--jungle);
-    font-family: 'Baskerville', serif;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
     font-size: 18px;
 }
 
@@ -21,7 +22,10 @@ a, h2 {
 }
 
 h1 {
-    color: var(--chesnut);
+  color: var(--chesnut);
+  font-family: montserrat,sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* NAVIGATION BAR */
@@ -67,14 +71,18 @@ h1 {
 .pfp {
     border-radius: 50%;
     float: left;
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 #about {
-    padding: 60px 50px 80px;
+    padding-top: 50px;
 }
 
 /* SKILLS */
+
+#skills {
+    padding-top: 37px;
+}
 
 .border {
   margin: 15px;
@@ -113,6 +121,10 @@ h1 {
 }
 
 /* PROJECTS */
+
+#projects {
+    padding-top: 37px;
+}
 .about-proj {
     padding: 20px 50px;
 }
