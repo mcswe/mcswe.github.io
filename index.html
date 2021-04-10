@@ -1,110 +1,91 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Madeline's Portfolio</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/snx5ily.css">
-  </head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/hep2qxt.css">
+    <title>mcswe</title>
+</head>
+<body>
+    <!--BACKGROUND-->
+    <img class="bg" src="imgs/logo.png" alt="mcswe">
 
-  <body>
-    <!-- NAVIGATION -->
-    <div class="navbar">
-      <p>MCSWE</p>
-      <a href="#contact">CONTACT</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#skills">SKILLS</a>
-      <a href="#about">ABOUT</a>
-    </div>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container-1">
-        <img class="pfp" src="imgs/me.jfif" width="250px" height="250px" alt="Madeline">
-        <h1>ABOUT ME</h1>
-        <p>Hi! My name is <strong>Madeline</strong> and I am a 2nd year student at Western Washington University.
-        I am working towards a Bachelors of Science in Computer Science, with a minor in Communication Studies.<br><br>
-        In addition to my studies, I have been doing research under the advisement of Dr. Caroline Hardin. 
-        My current project focuses on the development of a brand new, Computer Science Secondary Education BAE Major, which we expect
-        to be up and running by Spring 2021.
-        I am also collaborating with a few of my other lab members to develop the research lab website, found <a href="https://indexinbounds.org/" target="_blank"><strong>here</strong></a>!
-        </p>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <div class="border">
-        <h1>SKILLS</h1>
-        <div class="container-2">
-          <div class="box lang">
-            <h3>LANGUAGES</h3>
-            <ul><li>3+ Years Java</li><li>Python</li><li>HTML & CSS</li></ul>
-          </div>
-          <div class="box ops">
-            <h3>OPERATING SYSTEMS</h3>
-            <ul><li>Windows 10</li><li>Linux</li></ul>
-          </div>
-          <div class="box pt">
-            <h3>PLATFORMS & TOOLS </h3>
-            <ul><li>VS Code</li><li>Eclipse</li><li>Git</li><li>GitHub</li><li>Gradle</li></ul>
-          </div>
-          <div class="box other">
-            <h3>OTHER</h3>
-            <ul><li>Debugging</li><li>Writing and Executing Unit Tests</li></ul>
-          </div>
-        </div>
+    <!--ABOUT-->
+    <section id="text">
+        <section id="about">
+            <h1>ABOUT ME</h1>
+            <p>Hi! My name is <strong>Madeline</strong> (she/her) and I am a junior at Western Washington University
+            studying Computer Science and Communication Studies. To support my interests in <b>Software Development</b>, 
+            <b>Mobile Application Development</b>, and <b>CS Education</b>, I have been actively pursuing opportunities both 
+            independently and within my community. My most recent endeavors include the self-teaching of Android 
+            Development and HTML/CSS, as well as undergraduate research focused on the development of a new 
+            CS Secondary Education BAe Major at WWU.
+            <br><br>
+            Outside of my studies, you'll find me playing violin, spending time with friends, reading 
+            restaurant reviews on Yelp, and watching TV. (My current binge is <em>How to Get Away with Murder</em>!)
+            <br><br>
+            I also run an Instagram account <a href="https://instagram.com/comp.sci">@comp.sci</a> where I
+            post information aimed towards CS students, e.g. internship notifications, resume tips, coding 
+            problems, and more!
+            </p>
+        </section>
         <br><br>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="container-3">
-        <h1>PROJECTS</h1>
-        <img class="left-pic" src="imgs/countcomp.png" alt="unconnected graph">
-        <div class="about-proj">
-          <h2><a href="https://github.com/mcswe/Count-Components">Graph Component Counter</a></h2>
-          <p>This is a small project I worked on to practice implementing an <strong>adjacency matrix</strong> and <strong>breadth-first search.</strong>
-            <br><br> 
-          My main method accepts an argument for a text file whose first line specifies the number of nodes |V| and 
-          whose suceeding lines contain two integers indicating an edge between the two nodes. Nodes in the graph are 
-          numbered sequentially from 0..|V| and when run, the program will print the number of connected components in the graph.</p>
-        </div>
-        <br><br><br>
-        <img class="left-pic" src="imgs/tumor.png" alt="brain tumor">
-        <div class="about-proj">
-          <h2><a href="https://github.com/mcswe/Cancer-Classifier">Cancer Classifier</a></h2>
-          <p>This was the final assignment for my CSCI 141 - Intro to Programming class (Winter 2020). The goal was to implement 
-            a <strong>Machine Learning</strong> framework using Python to develop a rule-based classifier that predicts if an unknown 
-            tumor is malignant or benign.</p>
-        </div>
+        <section id="skills">
+            <h1>TECHNICAL SKILLS</h1>
+            <ul class="list">
+                <li><b>LANGUAGES: </b>3+ Years Java, HTML/CSS, C, Python, Racket</li>
+                <li><b>OPERATING SYSTEMS: </b>Windows, Linux</li>
+                <li><b>IDEs/VERSION CONTROL: </b>VS Code, Git, GitHub, Android Studio, Eclipse, Gradle, Racket</li>
+                <li><b>PROGRAMMER SKILLS: </b>Debugging, Pair Programming, Writing and Executing Unit Tests</li>
+                <li><b>OTHER: </b>Slack, Discord, KanBan Workflow, Microsoft Office Suite, Adobe Creative Cloud</li>
+            </ul>
+        </section>
         <br><br>
-        <h2><em>OTHER</em></h2>
-          <p>I have more notable, extensive projects in a private repository. For example, </p>
-          <ul>
-            <li><strong>Sorting Algorithm Demonstrator:</strong> a command-line program that visually demonstrates Selection, Merge, 
-              Quick, and Radix Sort while maintaining their best-case runtimes</li>
-            <li><strong>Unique Line Counter:</strong> a program that implements an AVL tree to print the number of unique lines in a txt file</li>
-            <li><strong>Heaps & HashMaps:</strong> a program that puts data from a priority queue into a Map</li>
-            <li><strong>Dijkstra's Algorithm:</strong> a program that finds the shortest path between two nodes and prints all the nodes on the path</li>
-          </ul>
-          <p>If you are interested in viewing them, please <a href="#contact"><strong>contact me</strong></a> and I will add you as a collaborator!</p>
-      </div>
+        <section id="coursework">
+            <h1>RELEVANT COURSEWORK</h1>
+            <ul class="list">
+                <u><em><b>Computer Science</b></em></u>
+                <li><b>PYTHON: </b>Introduction to Computer Programming I</li>
+                <li><b>JAVA: </b>AP Computer Science; Linear Data Structures and Object Oriented Programming; Data Structures</li>
+                <li><b>C: </b>Computer Systems I</li>
+                <li><b>RACKET: </b>Formal Languages and Functional Programming</li>
+            </ul>
+            <ul class="list">
+                <u><em><b>Math</b></em></u>
+                <li><b>CALCULUS: </b>Calculus I; Calculus 2</li>
+                <li><b>LINEAR ALGEBRA: </b>Intro to Linear Algebra</li>
+                <li><b>PROBABILITY AND STATISTICAL INFERENCE USING INTEGRALS</b></li>
+            </ul>
+        </section>
+        <br><br>
+        <section id="projects">
+            <h1>PROJECTS</h1>
+            <img class="icon" src="imgs/fridge.png" width="100px" height="100px" alt="fridge">
+            <img class="icon" src="imgs/graph.png" width="100px" height="100px" alt="connected component graph">
+            <img class="icon" src="imgs/wumpus.png" width="100px" height="100px" alt="wumpus">
+            <p><b>Fridge Food </b> Programmed a mobile application using Android Studio and Java where 
+                users can find recipes that use ingredients in their refrigerator.</p>
+            <p><b>Graphs & Paths </b>Implemented Dijkstra’s Algorithm using Java, Git and Gradle to build an 
+                interactive command-line program that computes the shortest paths of a graph read from a 
+                text file while maintaining O(log n) runtime.</p>
+            <p><b>Hunt the Wumpus </b> Designed UX/UI using C++ for a computer game design 
+                competition at Microsoft. Collaborated with a team of six other engineers to seamlessly
+                integrate individual code into one program.</p>
+            <br>
+            <p><em>For more projects, check out my GitHub repositories, <a href="https://github.com/mcswe">here</a>!</em></p>
+        </section>
+        <br><br>
+        <section id="contact">
+            <h1>CONTACT</h1>
+            <p>To discuss internship and job opportunities, please connect with me on LinkedIn. I look
+                forward to hearing from you!
+            </p>
+            <a href="https://www.linkedin.com/in/mad-c/" target="_blank">
+                <img src="img/linkedin.png" 
+                alt="LinkedIn Logo" style="width:100px;height:100px;"/>
+        </section>
     </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <h1>CONTACT ME</h1>
-        <a href="https://www.linkedin.com/in/mad-c/" target="_blank">
-          <img class="left-pic" src="https://seeklogo.net/wp-content/uploads/2017/01/linkedin-logo-512x512.png" 
-          alt="LinkedIn Logo" style="width:100px;height:100px;"/>
-        </a>
-        <a href="https://www.instagram.com/comp.sci/" target="_blank">
-          <img class="left-pic" src="https://i.pinimg.com/originals/9b/97/87/9b9787fb5209b99c3207554a341e3f32.png" 
-          alt="Instagram logo" style="width:100px;height:100px;"/>
-        </a>
-    </section>
-
-  </body>
+</body>
 </html>
