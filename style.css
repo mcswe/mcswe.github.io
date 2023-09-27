@@ -2,7 +2,7 @@
     --gray: #5B5B61;
     --robin: #CBDBDE;
     --milky: #D5E8F2;
-    --blossom: #c4657e;
+    --aqua: #6ea6b0;
 }
 
 body {
@@ -15,9 +15,9 @@ body {
 }
 
 .bg {
-    position: static;
-    max-height: 25%;
-    width: 25%;
+    /* position: static; */
+    max-height: 20%;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -25,16 +25,18 @@ body {
 }
 
 #text {
-    margin: 0px 200px 100px !important;
+    padding: 50px 200px 100px;
+    overflow-x: hidden;
     text-align: center;
 }
 
 a:link {
     color: var(--gray);
+    font-weight: 500;
 }
 
 a:visited {
-    color: var(--blossom);
+    color: var(--aqua);
 }
 
 /* ABOUT */
@@ -57,4 +59,31 @@ ul li::marker {
 /* PROJECTS */
 .icon {
     padding: 0px 20px;
+}
+
+/* Styles for the slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Styles for the individual slides */
+.slide {
+  display: none;
+}
+
+/* Style for fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0.4;
+  }
+  100% {
+      opacity: 1;
+  }
 }
